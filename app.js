@@ -19,10 +19,10 @@ app.get('/apps', (req, res) => {
     .toLowerCase()
     .includes(search.toLowerCase()));
 
-    let resultsCat = resultsApp
-    .filter(googleApp => 
+  let resultsCat = resultsApp
+  .filter(googleApp => 
     googleApp
-    .Category
+    .Genres
     .toLowerCase()
     .includes(genre.toLowerCase()));
 
@@ -34,6 +34,11 @@ app.get('/apps', (req, res) => {
 module.exports = app;
 
 
-app.listen(8000, () => {
-  console.log('Server started on PORT 8000');
-});
+
+
+
+
+
+
+
+
